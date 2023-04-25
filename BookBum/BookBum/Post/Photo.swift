@@ -8,7 +8,7 @@ import CoreImage
 import CoreImage.CIFilterBuiltins
 import SwiftUI
 
-struct Post1: View {
+struct Photo: View {
     @State private var image: Image?
     @State private var filterIntensity = 0.5
 
@@ -59,7 +59,7 @@ struct Post1: View {
                 }
             }
             .padding([.horizontal, .bottom])
-            .navigationTitle("POST")
+            .navigationTitle("PHOTO")
             .onChange(of: inputImage) { _ in loadImage() }
             .sheet(isPresented: $showingImagePicker) {
                 ImagePicker(image: $inputImage)
@@ -124,8 +124,9 @@ struct Post1: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct Photo_Previews: PreviewProvider {
     static var previews: some View {
-        Post1()
+        Photo()
     }
 }
+

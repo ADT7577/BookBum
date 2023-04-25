@@ -17,7 +17,7 @@
 		95080FD729F7682400212D7A /* CameraError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95080FD629F7682400212D7A /* CameraError.swift */; };
 		95080FD929F7683800212D7A /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95080FD829F7683800212D7A /* CameraManager.swift */; };
 		95080FDB29F7684800212D7A /* FrameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95080FDA29F7684800212D7A /* FrameManager.swift */; };
-		9569C26929DBCFB9006B3928 /* Post1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9569C26829DBCFB9006B3928 /* Post1.swift */; };
+		9569C26929DBCFB9006B3928 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9569C26829DBCFB9006B3928 /* Photo.swift */; };
 		9569C26B29DBD133006B3928 /* Settings1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9569C26A29DBD133006B3928 /* Settings1.swift */; };
 		9569C26D29DBD687006B3928 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9569C26C29DBD687006B3928 /* Login.swift */; };
 		9569C26F29DBD884006B3928 /* Bookclub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9569C26E29DBD884006B3928 /* Bookclub.swift */; };
@@ -32,6 +32,7 @@
 		95B91AE929D14A9A0049B588 /* Page 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B91AE829D14A9A0049B588 /* Page 2.swift */; };
 		95B91AEB29D1516B0049B588 /* Page 3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B91AEA29D1516B0049B588 /* Page 3.swift */; };
 		95B91AED29D151B90049B588 /* Page 4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B91AEC29D151B90049B588 /* Page 4.swift */; };
+		95C1675B29F866B400F9CC22 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C1675A29F866B400F9CC22 /* Camera.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,7 +46,7 @@
 		95080FD629F7682400212D7A /* CameraError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraError.swift; sourceTree = "<group>"; };
 		95080FD829F7683800212D7A /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
 		95080FDA29F7684800212D7A /* FrameManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameManager.swift; sourceTree = "<group>"; };
-		9569C26829DBCFB9006B3928 /* Post1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post1.swift; sourceTree = "<group>"; };
+		9569C26829DBCFB9006B3928 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		9569C26A29DBD133006B3928 /* Settings1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings1.swift; sourceTree = "<group>"; };
 		9569C26C29DBD687006B3928 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		9569C26E29DBD884006B3928 /* Bookclub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookclub.swift; sourceTree = "<group>"; };
@@ -61,6 +62,7 @@
 		95B91AE829D14A9A0049B588 /* Page 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Page 2.swift"; sourceTree = "<group>"; };
 		95B91AEA29D1516B0049B588 /* Page 3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Page 3.swift"; sourceTree = "<group>"; };
 		95B91AEC29D151B90049B588 /* Page 4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Page 4.swift"; sourceTree = "<group>"; };
+		95C1675A29F866B400F9CC22 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,11 +82,7 @@
 				95080FD529F7680C00212D7A /* Camera */,
 				95080FD229F7675F00212D7A /* Extensions */,
 				95080FCF29F766CD00212D7A /* ViewModels */,
-				95080FC529F7464D00212D7A /* ContentView.swift */,
-				95080FC729F7468E00212D7A /* ControlView.swift */,
-				95080FC929F746D000212D7A /* Errorview.swift */,
-				95080FCB29F746E400212D7A /* Frameview.swift */,
-				95080FCD29F746FC00212D7A /* ToggleButton.swift */,
+				95C1675929F865AC00F9CC22 /* View */,
 			);
 			path = Video;
 			sourceTree = "<group>";
@@ -92,7 +90,6 @@
 		95080FC429F7450E00212D7A /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				9569C26829DBCFB9006B3928 /* Post1.swift */,
 				95A90A6C29DCB4A500A85FEC /* ImagePicker.swift */,
 				95A90A6E29DCB4B300A85FEC /* ImageSaver.swift */,
 			);
@@ -181,6 +178,8 @@
 			isa = PBXGroup;
 			children = (
 				95080FC329F7450000212D7A /* Video */,
+				9569C26829DBCFB9006B3928 /* Photo.swift */,
+				95C1675A29F866B400F9CC22 /* Camera.swift */,
 				95080FC429F7450E00212D7A /* Image */,
 			);
 			path = Post;
@@ -216,6 +215,18 @@
 			children = (
 			);
 			path = Notifications;
+			sourceTree = "<group>";
+		};
+		95C1675929F865AC00F9CC22 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				95080FC529F7464D00212D7A /* ContentView.swift */,
+				95080FC729F7468E00212D7A /* ControlView.swift */,
+				95080FC929F746D000212D7A /* Errorview.swift */,
+				95080FCB29F746E400212D7A /* Frameview.swift */,
+				95080FCD29F746FC00212D7A /* ToggleButton.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,13 +307,14 @@
 				9569C26B29DBD133006B3928 /* Settings1.swift in Sources */,
 				9569C27129DBDC83006B3928 /* Home2.swift in Sources */,
 				95A90A6F29DCB4B300A85FEC /* ImageSaver.swift in Sources */,
+				95C1675B29F866B400F9CC22 /* Camera.swift in Sources */,
 				95B91AE329D13EC70049B588 /* Page 1.swift in Sources */,
 				95B91AEB29D1516B0049B588 /* Page 3.swift in Sources */,
 				95080FD929F7683800212D7A /* CameraManager.swift in Sources */,
 				95080FDB29F7684800212D7A /* FrameManager.swift in Sources */,
 				9569C27329DBE2A5006B3928 /* Library1.swift in Sources */,
 				95080FD429F767BB00212D7A /* CGImageExtension.swift in Sources */,
-				9569C26929DBCFB9006B3928 /* Post1.swift in Sources */,
+				9569C26929DBCFB9006B3928 /* Photo.swift in Sources */,
 				95080FD129F7672F00212D7A /* ContentViewModel.swift in Sources */,
 				95B91ABB29D10F420049B588 /* BookBumApp.swift in Sources */,
 				95080FCE29F746FC00212D7A /* ToggleButton.swift in Sources */,
@@ -442,6 +454,7 @@
 				DEVELOPMENT_TEAM = 58ZSYUX7S6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Using Camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -472,6 +485,7 @@
 				DEVELOPMENT_TEAM = 58ZSYUX7S6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Using Camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

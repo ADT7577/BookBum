@@ -15,8 +15,8 @@ struct Home2: View {
                     NavigationLink (destination: Page_4()) {
                         Text("BookClub")
                     }
-                    NavigationLink(destination: Post1()){
-                        Text("Post")
+                    NavigationLink(destination: Camera()){
+                        Text("Camera")
                     }
                     NavigationLink(destination: Library1()){
                         Text("Library")
