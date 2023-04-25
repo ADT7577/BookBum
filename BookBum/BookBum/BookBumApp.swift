@@ -2,7 +2,7 @@
 //  BookBumApp.swift
 //  BookBum
 //
-//  Created by Alexsa Tolentino on 4/4/23.
+//  Created by Alexsa Tolentino on 3/26/23.
 //
 
 import SwiftUI
@@ -11,7 +11,7 @@ import SwiftUI
 struct BookBumApp: App {
     var body: some Scene {
         WindowGroup {
-         LP()
+            Home2()
         }
     }
 }
