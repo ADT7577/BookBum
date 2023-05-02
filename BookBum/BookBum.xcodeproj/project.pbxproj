@@ -36,7 +36,19 @@
 		95C167652A019BDF00F9CC22 /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C167642A019BDF00F9CC22 /* UsersView.swift */; };
 		95C167672A019BFC00F9CC22 /* UserFetchingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C167662A019BFC00F9CC22 /* UserFetchingClient.swift */; };
 		95C167692A019C0C00F9CC22 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C167682A019C0C00F9CC22 /* UserData.swift */; };
+		95C1676B2A019E5800F9CC22 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C1676A2A019E5800F9CC22 /* User.swift */; };
+		95C1676F2A01A88000F9CC22 /* randomUsers.json in Resources */ = {isa = PBXBuildFile; fileRef = 95C1676E2A01A88000F9CC22 /* randomUsers.json */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		95C1677C2A01AB0300F9CC22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 95B91AAF29D10F420049B588 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 95B91AB629D10F420049B588;
+			remoteInfo = BookBum;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		95080FC529F7464D00212D7A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,10 +81,20 @@
 		95C167642A019BDF00F9CC22 /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
 		95C167662A019BFC00F9CC22 /* UserFetchingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFetchingClient.swift; sourceTree = "<group>"; };
 		95C167682A019C0C00F9CC22 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		95C1676A2A019E5800F9CC22 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		95C1676E2A01A88000F9CC22 /* randomUsers.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = randomUsers.json; sourceTree = "<group>"; };
+		95C167782A01AB0300F9CC22 /* BookBumTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookBumTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		95B91AB429D10F420049B588 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95C167752A01AB0300F9CC22 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -131,6 +153,7 @@
 		95B91AAE29D10F420049B588 = {
 			isa = PBXGroup;
 			children = (
+				95C1676E2A01A88000F9CC22 /* randomUsers.json */,
 				95B91AB929D10F420049B588 /* BookBum */,
 				95B91AB829D10F420049B588 /* Products */,
 			);
@@ -140,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				95B91AB729D10F420049B588 /* BookBum.app */,
+				95C167782A01AB0300F9CC22 /* BookBumTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -242,6 +266,7 @@
 				95C167642A019BDF00F9CC22 /* UsersView.swift */,
 				95C167662A019BFC00F9CC22 /* UserFetchingClient.swift */,
 				95C167682A019C0C00F9CC22 /* UserData.swift */,
+				95C1676A2A019E5800F9CC22 /* User.swift */,
 			);
 			path = Users;
 			sourceTree = "<group>";
@@ -266,6 +291,24 @@
 			productReference = 95B91AB729D10F420049B588 /* BookBum.app */;
 			productType = "com.apple.product-type.application";
 		};
+		95C167772A01AB0300F9CC22 /* BookBumTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95C1677E2A01AB0300F9CC22 /* Build configuration list for PBXNativeTarget "BookBumTests" */;
+			buildPhases = (
+				95C167742A01AB0300F9CC22 /* Sources */,
+				95C167752A01AB0300F9CC22 /* Frameworks */,
+				95C167762A01AB0300F9CC22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				95C1677D2A01AB0300F9CC22 /* PBXTargetDependency */,
+			);
+			name = BookBumTests;
+			productName = BookBumTests;
+			productReference = 95C167782A01AB0300F9CC22 /* BookBumTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -278,6 +321,10 @@
 				TargetAttributes = {
 					95B91AB629D10F420049B588 = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					95C167772A01AB0300F9CC22 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 95B91AB629D10F420049B588;
 					};
 				};
 			};
@@ -295,6 +342,7 @@
 			projectRoot = "";
 			targets = (
 				95B91AB629D10F420049B588 /* BookBum */,
+				95C167772A01AB0300F9CC22 /* BookBumTests */,
 			);
 		};
 /* End PBXProject section */
@@ -306,6 +354,14 @@
 			files = (
 				95B91AC229D10F430049B588 /* Preview Assets.xcassets in Resources */,
 				95B91ABF29D10F430049B588 /* Assets.xcassets in Resources */,
+				95C1676F2A01A88000F9CC22 /* randomUsers.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95C167762A01AB0300F9CC22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +392,7 @@
 				9569C26929DBCFB9006B3928 /* Photo.swift in Sources */,
 				95080FD129F7672F00212D7A /* ContentViewModel.swift in Sources */,
 				95B91ABB29D10F420049B588 /* BookBumApp.swift in Sources */,
+				95C1676B2A019E5800F9CC22 /* User.swift in Sources */,
 				95080FCE29F746FC00212D7A /* ToggleButton.swift in Sources */,
 				95C167692A019C0C00F9CC22 /* UserData.swift in Sources */,
 				95B91AED29D151B90049B588 /* Page 4.swift in Sources */,
@@ -346,7 +403,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		95C167742A01AB0300F9CC22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		95C1677D2A01AB0300F9CC22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 95B91AB629D10F420049B588 /* BookBum */;
+			targetProxy = 95C1677C2A01AB0300F9CC22 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		95B91AC329D10F430049B588 /* Debug */ = {
@@ -525,6 +597,50 @@
 			};
 			name = Release;
 		};
+		95C1677F2A01AB0300F9CC22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 58ZSYUX7S6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Alexsorcist.BookBumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BookBum.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BookBum";
+			};
+			name = Debug;
+		};
+		95C167802A01AB0300F9CC22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 58ZSYUX7S6;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Alexsorcist.BookBumTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BookBum.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BookBum";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -542,6 +658,15 @@
 			buildConfigurations = (
 				95B91AC629D10F430049B588 /* Debug */,
 				95B91AC729D10F430049B588 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95C1677E2A01AB0300F9CC22 /* Build configuration list for PBXNativeTarget "BookBumTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95C1677F2A01AB0300F9CC22 /* Debug */,
+				95C167802A01AB0300F9CC22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

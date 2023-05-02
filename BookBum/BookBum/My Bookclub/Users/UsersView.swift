@@ -1,7 +1,7 @@
 //
 //  ContentView.swift
 //  BookBum
-//
+// © Code Academy
 //
 //
 
@@ -11,15 +11,17 @@ struct UsersView: View {
     @StateObject var userData = UserData()
     
     var body: some View {
-        NavigationView{
-            VStack{
-                Text("Raw JSON Data:")
-                ScrollView {
-                    Text(userData.users)
-                }
+        NavigationView {
+            List(userData.users) { user in
+                Text(user.fullName)
             }
-            .padding()
             .navigationTitle("Random Users")
         }
+    }
+}
+
+struct UsersView_Previews: PreviewProvider {
+    static var previews: some View {
+        UsersView()
     }
 }

@@ -3,26 +3,25 @@
 //  BookBum
 // ©Code Academy
 //
-
 import Foundation
+
 @MainActor
-
-
 class UserData: ObservableObject {
-    @Published var users: String = ""
+    @Published var users: [User] = []
     
-    init(){
-        Task{
+    init() {
+        Task {
             await loadUsers()
         }
     }
     
-    func loadUsers() async{
-        do{
+    func loadUsers() async {
+        do {
             let users = try await UserFetchingClient.getUsers()
             self.users = users
-            } catch {
-                print(error)
-            }
+        }
+        catch {
+            print(error)
         }
     }
+}
