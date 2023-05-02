@@ -33,6 +33,9 @@
 		95B91AEB29D1516B0049B588 /* Page 3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B91AEA29D1516B0049B588 /* Page 3.swift */; };
 		95B91AED29D151B90049B588 /* Page 4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B91AEC29D151B90049B588 /* Page 4.swift */; };
 		95C1675B29F866B400F9CC22 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C1675A29F866B400F9CC22 /* Camera.swift */; };
+		95C167652A019BDF00F9CC22 /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C167642A019BDF00F9CC22 /* UsersView.swift */; };
+		95C167672A019BFC00F9CC22 /* UserFetchingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C167662A019BFC00F9CC22 /* UserFetchingClient.swift */; };
+		95C167692A019C0C00F9CC22 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95C167682A019C0C00F9CC22 /* UserData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +66,9 @@
 		95B91AEA29D1516B0049B588 /* Page 3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Page 3.swift"; sourceTree = "<group>"; };
 		95B91AEC29D151B90049B588 /* Page 4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Page 4.swift"; sourceTree = "<group>"; };
 		95C1675A29F866B400F9CC22 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		95C167642A019BDF00F9CC22 /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
+		95C167662A019BFC00F9CC22 /* UserFetchingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserFetchingClient.swift; sourceTree = "<group>"; };
+		95C167682A019C0C00F9CC22 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +171,7 @@
 		95B91AD829D13B680049B588 /* My Bookclub */ = {
 			isa = PBXGroup;
 			children = (
+				95C167632A019B8500F9CC22 /* Users */,
 				95B91AE229D13EC70049B588 /* Page 1.swift */,
 				95B91AE829D14A9A0049B588 /* Page 2.swift */,
 				95B91AEA29D1516B0049B588 /* Page 3.swift */,
@@ -227,6 +234,16 @@
 				95080FCD29F746FC00212D7A /* ToggleButton.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		95C167632A019B8500F9CC22 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				95C167642A019BDF00F9CC22 /* UsersView.swift */,
+				95C167662A019BFC00F9CC22 /* UserFetchingClient.swift */,
+				95C167682A019C0C00F9CC22 /* UserData.swift */,
+			);
+			path = Users;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,14 +327,17 @@
 				95C1675B29F866B400F9CC22 /* Camera.swift in Sources */,
 				95B91AE329D13EC70049B588 /* Page 1.swift in Sources */,
 				95B91AEB29D1516B0049B588 /* Page 3.swift in Sources */,
+				95C167672A019BFC00F9CC22 /* UserFetchingClient.swift in Sources */,
 				95080FD929F7683800212D7A /* CameraManager.swift in Sources */,
 				95080FDB29F7684800212D7A /* FrameManager.swift in Sources */,
 				9569C27329DBE2A5006B3928 /* Library1.swift in Sources */,
 				95080FD429F767BB00212D7A /* CGImageExtension.swift in Sources */,
+				95C167652A019BDF00F9CC22 /* UsersView.swift in Sources */,
 				9569C26929DBCFB9006B3928 /* Photo.swift in Sources */,
 				95080FD129F7672F00212D7A /* ContentViewModel.swift in Sources */,
 				95B91ABB29D10F420049B588 /* BookBumApp.swift in Sources */,
 				95080FCE29F746FC00212D7A /* ToggleButton.swift in Sources */,
+				95C167692A019C0C00F9CC22 /* UserData.swift in Sources */,
 				95B91AED29D151B90049B588 /* Page 4.swift in Sources */,
 				95080FC829F7468E00212D7A /* ControlView.swift in Sources */,
 				95080FCA29F746D000212D7A /* Errorview.swift in Sources */,
